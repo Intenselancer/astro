@@ -1,4 +1,4 @@
-fetch("./details.json")
+fetch("./astro.json")
     .then((response) => response.json())
     .then((data) => {
         createDetails(data)
@@ -8,16 +8,16 @@ fetch("./details.json")
 
 function createDetails(data) {
     const bsLeft = document.querySelector(".bs-left");
-    const bsRight = document.querySelector(".bs-content-side");
+    // const bsRight = document.querySelector(".bs-content-side");
 
     // Accessing fields and storing and varaibles
     const images = data?.imagesUrl ?? "";
     const bigImage = images[0];
     const remainingImages = images.slice(0, 6);
 
-    bsLeft.innerHTML = ``;
+    // bsLeft.innerHTML = ``;
 
-    bsRight.innerHTML = ``;
+    // bsRight.innerHTML = ``;
 
 
     const moreButton = bsLeft.querySelector('.bs-more');

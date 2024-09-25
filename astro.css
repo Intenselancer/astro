@@ -261,7 +261,8 @@
     gap: 15px;
 }
 
-.bs-category, .bs-date {
+.bs-category,
+.bs-date {
     display: flex;
     flex-direction: row;
     color: #767E94;
@@ -293,17 +294,18 @@
 
 .bs-bussiness-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 15px;
-    background: #e2e2e2;
-    padding: 10px;
+    /* background: #e2e2e2; */
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    padding: 14px;
     border-radius: 10px;
     margin-top: 1rem;
 }
 
 .bs-bussiness-top {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 15px;
 }
 
@@ -350,12 +352,16 @@
 
 .bs-table {
     margin-top: 0.8rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-radius: 10px;
 }
 
-.bs-table, th, td {
+.bs-table,
+th,
+td {
     min-width: 50%;
-    border: 2px solid #767E94;
-    border-collapse: collapse;
+    border: 2px solid rgba(0, 0, 0, 0.25);
     padding: 5px;
 }
 
@@ -381,7 +387,8 @@ del {
 .bs-right-content {
     border-radius: 12px;
     padding: 15px;
-    background: #e6e6e6;
+    /* background: #e6e6e6; */
+    border: 2px solid rgba(0, 0, 0, 0.25);
     margin-top: 1.5rem;
 }
 
@@ -498,13 +505,18 @@ button:hover {
     .bs-container {
         flex-direction: column;
     }
+
     .bs-right {
         padding: 0px;
     }
+
     .bs-right-content {
         padding: 8px;
     }
-    .bs-table, th, td {
+
+    .bs-table,
+    th,
+    td {
         min-width: 100%;
     }
 }
